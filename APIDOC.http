@@ -1,0 +1,34 @@
+###
+GET http://127.0.0.1:8000/employee/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/employee/
+Content-Type: application/json
+
+{
+    "name" : "Nived",
+    "employee_id" : 3,
+    "department" : "Sales",
+    "designation" : "sales manager",
+    "salary" : 35000
+}
+
+###
+PUT http://127.0.0.1:8000/employee/3/
+Content-Type: application/json
+
+{
+    "name" : "Nived",
+    "employee_id" : 3,
+    "department" : "Sales",
+    "designation" : "manager",
+    "salary" : 30000
+}
+
+
+###
+DELETE http://127.0.0.1:8000/employee/1/
+
+
